@@ -6,5 +6,5 @@ conditional_groups:
 
 exclude_host_filters:
  - tags['AnsibleManaged'] is undefined 
- - tags['AnsibleManaged'] == 'false'
+ - tags['AnsibleManaged'] is defined and tags['AnsibleManaged'] == 'False'
 
