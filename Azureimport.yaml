@@ -1,8 +1,8 @@
 plugin: azure.azcollection.azure_rm
 auth_source: cli
-conditional_groups:
-  linux: "'ubuntu' in image.offer"
-  windows: "'WindowsServer' in image.offer"
+# conditional_groups:
+#   linux: "'ubuntu' in image.offer"
+#   windows: "'WindowsServer' in image.offer"
 
 # exclude_host_filters:
 #  - tags['AnsibleManaged'] is undefined 
