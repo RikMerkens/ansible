@@ -1,0 +1,5 @@
+plugin: azure_rm
+auth_source: auto
+conditional_groups:
+  linux: "'ubuntu' in image.offer"
+  windows: "'WindowsServer' in image.offer"
