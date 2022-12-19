@@ -1,0 +1,20 @@
+--- 
+- name: RunLinux
+  hosts: servers_linux
+  gather_facts: true
+  become: false
+  become_method: sudo
+  become_user: root
+  tasks:
+  - name: Example from an Ansible Playbook
+     ansible.builtin.ping:
+     
+- name: RunWindows
+  hosts: servers_Windows
+  gather_facts: true
+  become: false
+  become_method: runas
+  become_user: administrator
+  tasks:
+  - name: Example from an Ansible Playbook
+     ansible.builtin.ping:
