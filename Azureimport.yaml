@@ -1,3 +1,4 @@
+--
 plugin: azure.azcollection.azure_rm
 auth_source: cli
 # conditional_groups:
