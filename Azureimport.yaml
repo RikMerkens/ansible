@@ -5,5 +5,5 @@ conditional_groups:
   windows: "'WindowsServer' in image.offer"
 
 exclude_host_filters:
-- tags['AnsibleManaged'] is undefined
-- tags['AnsibleManaged'] == 'false'
+ - tags['AnsibleManaged'] is undefined 
+ - tags['AnsibleManaged'] == 'false'
