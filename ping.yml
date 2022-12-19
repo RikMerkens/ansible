@@ -6,8 +6,8 @@
   become_method: sudo
   become_user: root
   tasks:
-  - name: Example from an Ansible Playbook
-    ansible.builtin.ping:
+    - name: Example from an Ansible Playbook
+      ansible.builtin.ping:
      
 - name: RunWindows
   hosts: servers_Windows
@@ -16,5 +16,5 @@
   become_method: runas
   become_user: administrator
   tasks:
-  - name: Example from an Ansible Playbook
-    ansible.builtin.ping:
+    - name: Example from an Ansible Playbook
+      ansible.builtin.ping:
