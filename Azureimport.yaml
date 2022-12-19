@@ -3,3 +3,7 @@ auth_source: auto
 conditional_groups:
   linux: "'ubuntu' in image.offer"
   windows: "'WindowsServer' in image.offer"
+
+exclude_host_filters:
+- tags['AnsibleManaged'] is undefined
+- tags['AnsibleManaged'] == 'false'
